@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="jumbotron">
-                    <img src="parcial2\logo_mz" alt="logo mz">
+                    <img src="parcial2\logo_mz.png" alt="logo mz">
                     <h1 class="display-4">Los mejores productos a mejor precio en un sólo lugar</h1>
                     <p class="lead">
                         En esta práctica se va a desarrollar un CRUD en PHP con MySQL.
