@@ -15,16 +15,17 @@
         <div class="row">
             <div class="col-12">
                 <div class="jumbotron">
-                    <img src="parcial2\logo_mz.png" alt="logo mz">
+                    <img src="img/jaja.png"  alt="">
                     <h1 class="display-4">Los mejores productos a mejor precio en un sólo lugar</h1>
                     <p class="lead">
-                        En esta práctica se va a desarrollar un CRUD en PHP con MySQL.
-                        Contiene las siguientes opciones:
+                        En MZ tenemos las mejores ofertas para ti y tu familia! 
                          <ul>
-                            <li>Registrar</li>
-                            <li>Consultar</li>
-                            <li>Editar</li>
-                            <li>Eliminar</li>
+                            <li>Ofertas de las semana</li>
+                            <li>Lunes - Naranjas a $12.00 el kilo</li>
+                            <li>Martes - Leches LALA 3x2</li>
+                            <li>Miercoles - Refresco Coca cola 2L a 2x1</li>
+                            <li>Jueves - Sabritas Paketaxo de $45.99 a $39.99</li>
+                            <li>Viernes - Carne de res Sukarne a solo $79 el kilo</li>
                          </ul>
                     </p>
                     <hr class="my-4">
