@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Registrar Usuario</h1><hr>
+                <h1>Registrar producto</h1><hr>
                 <form method="post" action="guardarDatos.php">
                     <div class="form-group">
                         <label for="">Nombre:</label>
@@ -22,23 +22,24 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">Edad:</label>
-                        <input type="number" class="form-control" name="edad" placeholder="Teclea la edad">
+                        <label for="">Precio:</label>
+                        <input type="number" class="form-control" name="precio" placeholder="Inserta su precio">
                     </div>
 
                     <div class="form-group">
-                        <input type="radio" name="sexo" value="1"> Masculino <br>
-                        <input type="radio" name="sexo" value="0"> Femenino
+                        <label for="">Marca:</label>
+                        <input type="text" class="form-control" name="marca" placeholder="Escribe la marca del producto">
                     </div>
 
                     <div class="form-group">
-                        <label for="">Domicilio:</label>
-                        <textarea name="domicilio" id="" cols="30" rows="10" class="form-control"></textarea>
+                        <label for="">Oferta:</label>
+                        <input type="radio" name="oferta" class="form-control" value="1">Sí</input>
+                        <input type="radio" name="oferta" class="form-control" value="0">No</input>
                     </div>
 
                     <div class="form-group">
-                        <label for="">Fecha de nacimiento:</label>
-                        <input type="date" class="form-control" name="fecha_nacimiento">
+                        <label for="">Código del producto:</label>
+                        <input type="number" class="form-control" name="codigo">
                     </div>
                     <div>
                         <input type="submit" class="btn btn-primary" value="Registrar">

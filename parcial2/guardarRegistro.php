@@ -4,13 +4,13 @@
 
     $id = $_POST["id"];
     $nombre = $_POST["nombre"];
-    $edad = $_POST["edad"];
-    $sexo = $_POST["sexo"];
-    $domicilio = $_POST["domicilio"];
-    $fecha_nacimiento = $_POST["fecha_nacimiento"];
+    $precio = $_POST["precio"];
+    $marca = $_POST["marca"];
+    $oferta = $_POST["oferta"];
+    $codigo = $_POST["codigo"];
 
-    $sql = "UPDATE usuarios SET nombre='".$nombre."' , edad= ".$edad.",". 
-    "sexo = '".$sexo."', domicilio = '".$domicilio."', fecha_nacimiento ='".$fecha_nacimiento."'".
+    $sql = "UPDATE registrar SET nombre='".$nombre."' , precio= ".$precio.",". 
+    "marca = '".$marca."', oferta = '".$oferta."', codigo ='".$codigo."'".
     "WHERE id=".$id;
 
     if($conexion->query($sql) === TRUE){

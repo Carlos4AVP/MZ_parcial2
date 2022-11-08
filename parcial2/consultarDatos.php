@@ -12,7 +12,7 @@
 
     <?php
       include 'conexion.php';
-      $sql = "select * from usuarios";
+      $sql = "select * from registrar";
       $datos = $conexion->query($sql);
 
     ?>
@@ -27,10 +27,10 @@
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
-                            <th>Edad</th>
-                            <th>Sexo</th>
-                            <th>Domicilio</th>
-                            <th>Fecha de nacimiento</th>
+                            <th>Precio</th>
+                            <th>Marca</th>
+                            <th>Oferta</th>
+                            <th>Código</th>
                             <th>Opciones</th>
                         </tr>
                     </thead>
@@ -41,10 +41,10 @@
                         <tr>
                             <td><?php echo $row["id"]; ?></td>
                             <td><?php echo $row["nombre"]; ?></td>
-                            <td><?php echo $row["edad"]; ?></td>
-                            <td><?php echo $row["sexo"]; ?></td>
-                            <td><?php echo $row["domicilio"]; ?></td>
-                            <td><?php echo $row["fecha_nacimiento"]; ?></td>
+                            <td><?php echo $row["precio"]; ?></td>
+                            <td><?php echo $row["marca"]; ?></td>
+                            <td><?php echo $row["oferta"]; ?></td>
+                            <td><?php echo $row["codigo"]; ?></td>
                             <td>
                                 <a href="actualizarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a>
                                 <a href="eliminarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">Eliminar</a>

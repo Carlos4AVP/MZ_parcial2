@@ -3,11 +3,12 @@
     $server = "localhost";
     $user = "root";
     $password = "";
-    $database = "practica_web";
+    $database = "mz_parcial2";
 
     $conexion = new mysqli($server, $user, $password, $database);
 
-    if($conexion->connect_error){
+    if($conexion->connect_error)
+    {
         die("Falló la conexión: " . $conexion->connect_error);
     }
 

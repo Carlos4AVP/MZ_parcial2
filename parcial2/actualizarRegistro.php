@@ -12,7 +12,7 @@
     <?php
         include 'conexion.php';
         $id = $_GET["id"];
-        $sql = "SELECT * FROM usuarios WHERE id=" . $id;
+        $sql = "SELECT * FROM registrar WHERE id=" . $id;
         $resultado = $conexion->query($sql);
         $registro = $resultado->fetch_assoc();
     ?>
@@ -26,35 +26,35 @@
                     <input name="id" type="hidden" value="<?php echo $registro["id"]; ?>">
                     <div class="form-group">
                         <label for="">Nombre:</label>
-                        <input value="<?php echo $registro["nombre"]; ?>" type="text" class="form-control" name="nombre" placeholder="Teclea el nombre">
+                        <input value="<?php echo $registro["nombre"]; ?>" type="text" class="form-control" name="nombre" placeholder="Teclea el nombre del producto">
                     </div>
 
                     <div class="form-group">
-                        <label for="">Edad:</label>
-                        <input value="<?php echo $registro["edad"]; ?>" type="number" class="form-control" name="edad" placeholder="Teclea la edad">
+                        <label for="">Precio:</label>
+                        <input value="<?php echo $registro["precio"]; ?>" type="number" class="form-control" name="precio" placeholder="Introduce su precio">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Marca:</label>
+                        <input value="<?php echo $registro["marca"]; ?>" type="text" class="form-control" name="marca" placeholder="Escribe la marca">
                     </div>
 
                     <div class="form-group">
                     <?php
-                        if($registro["sexo"]){
-                            echo "<input type='radio' name='sexo' value='1' checked> Masculino <br>";
-                            echo "<input type='radio' name='sexo' value='0'> Femenino <br>";
+                        if($registro["oferta"]){
+                            echo "<input type='radio' name='oferta' value='1' checked> Sí <br>";
+                            echo "<input type='radio' name='oferta' value='0'> No <br>";
                         } else {
-                            echo "<input type='radio' name='sexo' value='1'> Masculino <br>";
-                            echo "<input type='radio' name='sexo' value='0' checked> Femenino <br>";
+                            echo "<input type='radio' name='oferta' value='1'> Sí <br>";
+                            echo "<input type='radio' name='oferta' value='0' checked> No <br>";
                         }
                     ?>
                     </div>
 
-                    <div class="form-group">
-                        <label for="">Domicilio:</label>
-                        <textarea name="domicilio" id="" cols="30" rows="10" class="form-control"><?php echo $registro["domicilio"] ?>
-                        </textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Fecha de nacimiento:</label>
-                        <input value="<?php echo $registro["fecha_nacimiento"]; ?>" type="date" class="form-control" name="fecha_nacimiento">
+                
+                        <div class="form-group">
+                        <label for="">Código</label>
+                        <input value="<?php echo $registro["codigo"]; ?>" type="number" class="form-control" name="codigo">
                     </div>
                     <div>
                         <input type="submit" class="btn btn-primary" value="Registrar">
